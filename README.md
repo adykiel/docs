@@ -1,32 +1,75 @@
-# Mintlify Starter Kit
+# Dokumentacja Wewnętrzna Firmy
 
-Use the starter kit to get your docs deployed and ready to customize.
+Repozytorium zawiera pełną dokumentację wewnętrzną firmy, obejmującą:
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Struktura dokumentacji
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+### 📊 Sprzedaż
+- **Strategia sprzedaży** - Kompleksowa strategia sprzedażowa firmy
+- **Procesy sprzedaży** - Szczegółowe procesy i procedury sprzedażowe
+- **Materiały sprzedażowe** - Zasoby i narzędzia wspierające sprzedaż
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+### 📢 Marketing
+- **Strategia marketingowa** - Kompleksowa strategia marketingowa
+- **Kampanie marketingowe** - Planowanie i realizacja kampanii
+- **Content marketing** - Strategia i plan publikacji contentu
 
-## Development
+### 👥 HR
+- **Wdrożenie pracownika** - Kompleksowy proces onboardingu
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+### 🎧 Obsługa Klienta
+- **Procesy obsługi klienta** - Standardy i procedury obsługi
 
-```
+## Podgląd lokalny
+
+Aby zobaczyć dokumentację lokalnie, zainstaluj [Mintlify CLI](https://www.npmjs.com/package/mint):
+
+```bash
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Następnie uruchom w katalogu głównym:
 
-```
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Dokumentacja będzie dostępna pod adresem `http://localhost:3000`.
+
+## Deployment
+
+Dokumentacja jest automatycznie deployowana na Mintlify po każdym pushu do brancha `main`.
+
+## Aktualizacja dokumentacji
+
+1. Edytuj pliki `.mdx` w odpowiednich katalogach
+2. Commituj zmiany
+3. Push do repozytorium
+4. Zmiany pojawią się automatycznie na stronie
+
+## Struktura plików
+
+```
+docs/
+├── docs.json              # Konfiguracja nawigacji
+├── index.mdx             # Strona główna
+├── sprzedaz/             # Dokumentacja sprzedaży
+│   ├── strategia.mdx
+│   ├── procesy.mdx
+│   └── materialy.mdx
+├── marketing/            # Dokumentacja marketingu
+│   ├── strategia.mdx
+│   ├── kampanie.mdx
+│   └── content.mdx
+├── hr/                   # Dokumentacja HR
+│   └── wdrozenie.mdx
+└── obsluga-klienta/      # Dokumentacja obsługi klienta
+    └── procesy.mdx
+```
+
+## Wsparcie
+
+W razie pytań dotyczących dokumentacji, skontaktuj się z działem IT lub HR.
 
 ## Publishing changes
 
