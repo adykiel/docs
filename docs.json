@@ -9,66 +9,97 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Start",
-        "groups": [
-          {
-            "group": "Witaj",
-            "pages": [
-              "index"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Sprzedaż",
+        "product": "Sprzedaż i Marketing",
+        "description": "Strategia i procesy sprzedażowo-marketingowe",
         "icon": "chart-line",
-        "groups": [
+        "tabs": [
           {
-            "group": "Sprzedaż",
-            "pages": [
-              "sprzedaz/strategia",
-              "sprzedaz/procesy",
-              "sprzedaz/materialy"
+            "tab": "Start",
+            "icon": "house",
+            "groups": [
+              {
+                "group": "Witaj",
+                "pages": ["index"]
+              }
+            ]
+          },
+          {
+            "tab": "Sprzedaż",
+            "icon": "handshake",
+            "groups": [
+              {
+                "group": "Strategia sprzedażowa",
+                "icon": "chess",
+                "pages": [
+                  "sprzedaz/strategia"
+                ]
+              },
+              {
+                "group": "Procesy i materiały",
+                "icon": "folder-open",
+                "expanded": true,
+                "pages": [
+                  "sprzedaz/procesy",
+                  "sprzedaz/materialy"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Marketing",
+            "icon": "megaphone",
+            "groups": [
+              {
+                "group": "Strategia marketingowa",
+                "icon": "bullseye",
+                "pages": [
+                  "marketing/strategia"
+                ]
+              },
+              {
+                "group": "Realizacja",
+                "icon": "rocket",
+                "expanded": true,
+                "pages": [
+                  "marketing/kampanie",
+                  "marketing/content"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Marketing",
-        "icon": "megaphone",
-        "groups": [
-          {
-            "group": "Marketing",
-            "pages": [
-              "marketing/strategia",
-              "marketing/kampanie",
-              "marketing/content"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "HR",
+        "product": "Ludzie i Obsługa",
+        "description": "HR i obsługa klienta",
         "icon": "users",
-        "groups": [
+        "tabs": [
           {
-            "group": "Zasoby Ludzkie",
-            "pages": [
-              "hr/wdrozenie"
+            "tab": "HR",
+            "icon": "user-tie",
+            "groups": [
+              {
+                "group": "Zarządzanie pracownikami",
+                "icon": "users-gear",
+                "pages": [
+                  "hr/wdrozenie"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Obsługa Klienta",
-        "icon": "headset",
-        "groups": [
+          },
           {
-            "group": "Customer Support",
-            "pages": [
-              "obsluga-klienta/procesy"
+            "tab": "Obsługa Klienta",
+            "icon": "headset",
+            "groups": [
+              {
+                "group": "Customer Support",
+                "icon": "comments",
+                "pages": [
+                  "obsluga-klienta/procesy"
+                ]
+              }
             ]
           }
         ]
